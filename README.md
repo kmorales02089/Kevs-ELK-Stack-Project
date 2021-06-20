@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-
+Check Diagrams Folder
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -94,7 +94,5 @@ SSH into the control node and follow the steps below:
 Answer the following questions to fill in the blanks:_
 - Playbook is install_elk.yml and copy to /etc/ansible
 - The file you update hosts files, and install-elk.yml file to run playbook on a certain machine and run ansible-playbook to confirm it us running 
+- To specify which machine to install is install-ELK.yml get installed in your ELKServer and Filebeat and Metricbeat get installed in you Webservers.
 -  URL to run on your web browser is http://[your.ELK-VM-IP]:5601/app/kibana
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-- Run a curl -L to formatted template of a playbook and copy to your /etc/ansible folder.
-- nano playbook.yml
