@@ -59,7 +59,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- The advantage of automating configuration with Ansible is to minimize potential errors and saves time to run playbooks.
 
 The playbook implements the following tasks:
 - Install docker.io
@@ -69,7 +69,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-Check Images Folder
+- Check Images Folder for docker ps screenshot
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -88,12 +88,13 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the playbook file to Ansible.
-- Update the hosts file to include webservers IPs and elk server IP with command ansible_python_interpreter=/usr/bin/python3
+- Update the hosts file to include webservers IPs and elk server IP with syntax ansible_python_interpreter=/usr/bin/python3
 - Run the playbook, SSH into the ELKVM and run docker ps to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
+Answer the following questions to fill in the blanks:_
+- Playbook is install_elk.yml and copy to /etc/ansible
+- The file you update hosts files, and install-elk.yml file to run playbook on a certain machine and run ansible-playbook to confirm it us running 
+-  URL to run on your web browser is http://[your.ELK-VM-IP]:5601/app/kibana
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- Run a curl -L to formatted template of a playbook and copy to your /etc/ansible folder.
+- nano playbook.yml
