@@ -51,9 +51,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| JumpBoxProvisioner | Yes             | 10.0.0.1 10.0.0.2    |
-| Web         |                     |                      |
-|          |                     |                      |
+| JumpBoxProvisioner | Yes             | 52.229.31.171    |
+| Web-1              | No              | 10.0.0.5         |
+| Web-2              | No              | 10.0.0.6         |
+| Web-3              | No              | 10.0.0.7         |
+| ShakaMeVM          | No              | 10.1.0.4         |
 
 ### Elk Configuration
 
