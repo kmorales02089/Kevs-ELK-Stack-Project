@@ -24,8 +24,8 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly efficient, in addition to restricting traffic to the network.
 - Load balancers protect the servers from overloading and advantage of a jumpbox is control access and devices to the network.
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- Filebeat watches for data that has been changed and when the change took place.
+- Metricbeat records metrics and statistics.
 
 The configuration details of each machine may be found below.
 
@@ -42,9 +42,9 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the JumpBoxProvisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- IP: 67.180.142.147
-Machines within the network can only be accessed by JumpBoxProvisioner VM.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- IP: 52.229.31.171
+- Machines within the network can only be accessed by JumpBoxProvisioner VM.
+- JumpBoxProvisioner allows access to the ELK VM. IP address is 10.1.0.4.
 
 A summary of the access policies in place can be found in the table below.
 
